@@ -6,6 +6,13 @@ export const users = [
     nationality: "Bangladesh",
     gender: "Male",
   },
+  {
+    gamertag: "Kingslayer",
+    name: "Munem Al Shafat",
+    age: 69,
+    nationality: "Bangladesh",
+    gender: "Gay",
+  },
 
   {
     gamertag: "PewDiePie",
@@ -71,13 +78,6 @@ export const users = [
     gender: "Male",
   },
   {
-    gamertag: "Kingslayer",
-    name: "Munem Al Shafat",
-    age: 69,
-    nationality: "Bangladesh",
-    gender: "Gay",
-  },
-  {
     gamertag: "Sykkuno",
     name: "Thomas Sylvester",
     age: 29,
@@ -125,13 +125,6 @@ export const users = [
     age: 24,
     nationality: "South Korea",
     gender: "Female",
-  },
-  {
-    gamertag: "PunkIzzOver",
-    name: "Izaz Alam",
-    age: 420,
-    nationality: "Bangladesh",
-    gender: "Gay",
   },
   {
     gamertag: "xQc",
