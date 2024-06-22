@@ -7,14 +7,6 @@ export const users = [
     gender: "Male",
   },
   {
-    gamertag: "Kingslayer",
-    name: "Munem Al Shafat",
-    age: 69,
-    nationality: "Bangladesh",
-    gender: "Gay",
-  },
-
-  {
     gamertag: "PewDiePie",
     name: "John Smith",
     age: 25,
@@ -35,6 +27,14 @@ export const users = [
     nationality: "Canada",
     gender: "Male",
   },
+  {
+    gamertag: "Kingslayer",
+    name: "Munem Al Shafat",
+    age: 69,
+    nationality: "Bangladesh",
+    gender: "Gay",
+  },
+
   {
     gamertag: "Pokimane",
     name: "Emily Davis",
@@ -57,6 +57,13 @@ export const users = [
     gender: "Male",
   },
   {
+    gamertag: "PunkIzzOver",
+    name: "Izaz Alam",
+    age: 23,
+    nationality: "Bangladesh",
+    gender: "Male",
+  },
+  {
     gamertag: "xQc",
     name: "Félix Lengyel",
     age: 27,
@@ -75,6 +82,13 @@ export const users = [
     name: "Chance Morris",
     age: 26,
     nationality: "USA",
+    gender: "Male",
+  },
+  {
+    gamertag: "Boostwar",
+    name: "Samiul Bashar",
+    age: 16,
+    nationality: "Bangladesh",
     gender: "Male",
   },
   {

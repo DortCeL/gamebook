@@ -1,46 +1,45 @@
 import { useNavigate } from "react-router-dom";
 import "./topbar.css";
-import { Search, Person, Chat, Notifications } from "@mui/icons-material";
+import { Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
+import SignoutButton from "../SignoutButton";
 
 export default function Topbar() {
   const navigate = useNavigate();
+
   return (
-    <div className="topbarContainer">
-      <div className="topbarLeft">
-        <span onClick={() => navigate("/")} className="logo">
-          Gamebook
-        </span>
-      </div>
-      <div className="topbarCenter">
-        <div className="searchbar">
-          <Search className="searchIcon" />
-          <input
-            placeholder="Search for friend, post or video"
-            className="searchInput"
-          />
-        </div>
-      </div>
-      <div className="topbarRight">
-        <div className="topbarLinks">
-          <span className="topbarLink">Homepage</span>
-          <span className="topbarLink">Timeline</span>
-        </div>
-        <div className="topbarIcons">
-          <div className="topbarIconItem">
-            <Person />
-            <span className="topbarIconBadge">1</span>
-          </div>
-          <div className="topbarIconItem">
-            <Chat />
-            <span className="topbarIconBadge">2</span>
-          </div>
-          <div className="topbarIconItem">
-            <Notifications />
-            <span className="topbarIconBadge">1</span>
-          </div>
-        </div>
-        <img src="/assets/person/1.jpeg" alt="" className="topbarImg" />
-      </div>
-    </div>
+    <Navbar expand="lg" className="bg-primary navbar-dark">
+      <Container>
+        <Navbar.Brand onClick={() => navigate("/")}>Gamebook</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#link">Link</Nav.Link>
+          </Nav>
+          <Nav className="ms-auto">
+            <NavDropdown
+              title={
+                <img
+                  src="https://picsum.photos/200"
+                  alt="Avatar"
+                  className="avatar"
+                />
+              }
+              id="basic-nav-dropdown"
+            >
+              <NavDropdown.Item>My profile</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => navigate("/my-games")}>
+                My games
+              </NavDropdown.Item>
+
+              <NavDropdown.Divider />
+              <NavDropdown.Item>
+                <SignoutButton />
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
