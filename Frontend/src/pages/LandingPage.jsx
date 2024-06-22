@@ -1,13 +1,25 @@
-import { useNavigate } from "react-router-dom";
+import { Container } from "react-bootstrap";
+
 import Topbar from "../components/Topbar/Topbar";
+import Sidebar from "../components/Sidebar";
+import Feed from "../components/Feed";
+import Rightbar from "../components/Rightbar";
 
 function LandingPage() {
-  const navigate = useNavigate();
   return (
     <>
       <Topbar />
-      <h1>Welcome to my fucking website</h1>
-      <button onClick={() => navigate("lol")}>Find Creators</button>
+      <Container fluid className="d-flex p-0" style={{ height: "100vh" }}>
+        <div style={{ flex: 0.5, backgroundColor: "#f8f911" }}>
+          <Sidebar />
+        </div>
+        <div style={{ flex: 2, backgroundColor: "#f8f9fa" }}>
+          <Feed />
+        </div>
+        <div style={{ flex: 0.75, backgroundColor: "#e9ec11" }}>
+          <Rightbar />
+        </div>
+      </Container>
     </>
   );
 }
