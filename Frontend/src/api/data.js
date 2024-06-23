@@ -30,9 +30,9 @@ export const users = [
   {
     gamertag: "Kingslayer",
     name: "Munem Al Shafat",
-    age: 69,
+    age: 23,
     nationality: "Bangladesh",
-    gender: "Gay",
+    gender: "Male",
   },
 
   {
