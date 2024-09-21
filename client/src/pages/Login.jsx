@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 
-const backend = "https://sd-project-backend.vercel.app";
+const backend = "https://gamebook-finalized-backend.vercel.app";
 
 const Login = () => {
 	const [email, setEmail] = useState("");

@@ -3,7 +3,7 @@ import axios from "axios";
 import Navbar from "../components/Navbar";
 import { useNavigate } from "react-router-dom";
 
-const backend = "https://sd-project-backend.vercel.app";
+const backend = "https://gamebook-finalized-backend.vercel.app";
 
 const GamesList = () => {
 	const navigate = useNavigate();
@@ -42,7 +42,7 @@ const GamesList = () => {
 
 	// const fetchProducts = async () => {
 	// 	try {
-	// 		const response = await axios.get("http://localhost:3000/api/products");
+	// 		const response = await axios.get("https://gamebook-finalized-backend.vercel.app");
 	// 		setProducts(response.data);
 	// 		setFilteredProducts(response.data); // Initialize filtered products with all products
 	// 	} catch (error) {
@@ -102,7 +102,7 @@ const GamesList = () => {
 	// Add a new product
 	// const handleAddProduct = async () => {
 	// 	try {
-	// 		await axios.post("http://localhost:3000/api/products", newProduct);
+	// 		await axios.post("https://gamebook-finalized-backend.vercel.app", newProduct);
 	// 		fetchProducts(); // Refresh the product list
 	// 		setNewProduct({ title: "", publisher: "", year: 0, price: 0 });
 	// 	} catch (error) {
