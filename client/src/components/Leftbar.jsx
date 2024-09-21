@@ -7,7 +7,7 @@ export default function Leftbar({ username }) {
 		<>
 			<div className='w-48 h-[calc(100vh-64px)] flex flex-col gap-2 p-5 bg-slate-300'>
 				<img
-					src=''
+					src='https://picsum.photos/80'
 					alt=''
 					className='w-20 h-20 rounded-full border-4 border-black mx-auto'
 				/>
