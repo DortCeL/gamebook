@@ -3,6 +3,7 @@ import Feed from "../components/Feed";
 import Leftbar from "../components/Leftbar";
 import Navbar from "../components/Navbar";
 import Rightbar from "../components/Rightbar";
+import Footer from "../components/Footer";
 
 function Home() {
 	const username = "Current User";
@@ -15,6 +16,7 @@ function Home() {
 				<Feed />
 				<Rightbar />
 			</div>
+			<Footer />
 		</>
 	);
 }

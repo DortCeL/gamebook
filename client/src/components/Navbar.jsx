@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import SignoutButton from "./SignoutButton";
 
 export default function Navbar({ username }) {
 	const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -10,7 +11,7 @@ export default function Navbar({ username }) {
 
 	return (
 		<header>
-			<div className='w-full h-16 flex justify-between items-center px-8 md:px-36 bg-slate-800 text-white'>
+			<div className='w-full h-16 flex justify-between items-center px-8 md:px-36 bg-black text-white'>
 				<Link to='/'>
 					<h1 className='text-white hover:text-slate-200 text-xl font-extrabold'>
 						Gamebook
@@ -21,7 +22,7 @@ export default function Navbar({ username }) {
 					<div className='flex items-center gap-4'>
 						<span className='text-sm font-medium'>{username}</span>
 						<img
-							src='https://via.placeholder.com/40'
+							src='https://picsum.photos/40'
 							alt='User Avatar'
 							className='w-10 h-10 rounded-full border-2 border-white cursor-pointer hover:border-slate-400'
 							onClick={handleAvatarClick}
@@ -35,8 +36,8 @@ export default function Navbar({ username }) {
 									My Games
 								</button>
 							</Link>
-							<button className='w-full text-left px-4 py-2 hover:bg-gray-200'>
-								Sign Out
+							<button className='w-full text-left px-4 py-2'>
+								<SignoutButton />
 							</button>
 						</div>
 					)}
